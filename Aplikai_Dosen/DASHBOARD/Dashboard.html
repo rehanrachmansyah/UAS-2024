@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Dosen</title>
+    <link rel="icon" href="aset/Logo Gram.png">
+    <link rel="stylesheet" href="bootstrap-rehan.css">
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body class="bg-custom vh-100 vw-100">
+    <header>
+        <div class="navbar bg-white row-custom">
+            <div class="col-1">
+                <img src="aset/logo.jpg" alt="" style="width: 6rem;">
+            </div>
+            <div class="col">
+                <h1 style="font-family: inknut antiqua;">UNIVERSITAS AMIKOM</h1>
+            </div>
+            <div class="tab-menu col-3 d-flex  sub-tab"> <!--justify-content-between-->
+                <!-- <div>
+                    <a class="font-color-black" href="">MATERI</a>
+                </div>
+                <div>
+                    <a class="font-color-black" href="">UJIAN</a>
+                </div>
+                <div>
+                    <a class="font-color-black" href="">NILAI</a>
+                </div> -->
+                <table class="table text-center table-borderless">
+                    <tr>
+                        <td class=""><!--bg-warning-->
+                            <a class="font-color-black" href="">MATERI</a>
+                        </td>
+                        <td>
+                            <a class="font-color-black" href="">UJIAN</a>
+                        </td>
+                        <td>
+                            <a class="font-color-black" href="/INPUT_DATA/Input_Data.html">NILAI</a>
+                        </td>
+                    </tr>
+                </table>
+                <div style="font-family: inknut antiqua;">
+                    <a href="/LOGIN/Login.html"><button class="btn btn-dark">LOGOUT</button></a>
+                </div>
+            </div>
+            <div class="col-1">
+            </div>
+        </div>
+    </header>
+    <footer class="d-flex">
+        <!-- sidebar -->
+        <div class="sidebar col-2 bg-white min-vh-80">
+            <div class="profil row"> <!--bg-warning-->
+                <div class="text-center">
+                    <img src="aset/07 Profile avatar.png" alt="">
+                </div>
+                <div class="judul-profil mt-3"><!--bg-success-->
+                    <h6>REHAN RACHMANSYAH</h6>
+                    <h6>23.01.5074</h6>
+                </div>
+            </div>
+            <div class="menu row"><!--bg-primary-->
+                <div class="list-menu">
+                    <div class="sub-judul">
+                        <div class=" mt-1">
+                            <div>Discover</div>
+                            <div class="isi-sub-judul">
+                                <div class=" mt-2">
+                                    <a class="anak" href="#">
+                                        <img src="aset/home.svg" alt="">
+                                        <span class="ps-2">Home</span>
+                                    </a>
+                                </div>
+                                <div class=" ">
+                                    <a class="anak2" href="../praktikum9_INPUT_DATA/Input_Data.html">
+                                        <img src="aset/search.svg" alt="">
+                                        <span class="ps-2">Edit Profil</span>
+                                    </a>
+                                </div>
+                                <div class="">
+                                    <a class="anak" href="#">
+                                        <img src="aset/radio.svg" alt="">
+                                        <span class="ps-2">Pengumuman Kelas</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sub-judul mt-2">
+                        <div >Library</div>
+                        <div class="isi-sub-judul">
+                            <div class="mt-2">
+                                <a class="anak" href="#">
+                                    <img src="aset/list.svg" alt="">
+                                    <span class="px-2">Program Studi</span>
+                                </a>
+                            </div>
+                            <div class="">
+                                <a class="anak2" href="#">
+                                    <img src="aset/music.svg" alt="">
+                                    <span class="px-2">Musik</span>
+                                </a>
+                            </div>
+                            <div class="">
+                                <a class="anak" href="#">
+                                    <img src="aset/smile.svg" alt="">
+                                    <span class="px-2">Personalized Picks</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- main content -->
+        <div class="col-10">
+            <div class="konten p-5">
+                <div class="judul mb-3">
+                    <h5>JADWAL MENGAJAR HARI INI</h5>
+                </div>
+                <div class="kolom-filter">
+                    <div class="d-flex">
+                        <div class="input-grup mb-3">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <div class="ps-3 dropdown">
+                            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              Filter
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabel-jadwal">
+                    <table class="table text-center overflow-auto">
+                        <tr>
+                            <th>NO</th>
+                            <th>JAM</th>
+                            <th>KELAS</th>
+                            <th>MATA KULIAH</th>
+                            <th>JUMLAH SKS</th>
+                            <th>RUANG</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>07.00 - 08.40</td>
+                            <td>D3 Teknik Informatika 01</td>
+                            <td>
+                                <div>
+                                    <div class="d-inline-block bg-suk radius px-2">Pemrograman Web</div>
+                                </div>
+                            </td>
+                            <!-- <td>2 SKS</td> -->
+                            <td>
+                                <div>
+                                    <div class="d-inline-block bg-white radius px-2">2 SKS</div>
+                                </div>
+                            </td>
+                            <td>7.5.2</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>07.00 - 08.40</td>
+                            <td>D3 Teknik Informatika 01</td>
+                            <td>
+                                <div>
+                                    <div class="d-inline-block bg-suk radius px-2">Pemrograman Web</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <div class="d-inline-block bg-white radius px-2">2 SKS</div>
+                                </div>
+                            </td>
+                            <td>7.5.2</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>07.00 - 08.40</td>
+                            <td>D3 Teknik Informatika 01</td>
+                            <td>
+                                <div>
+                                    <div class="d-inline-block bg-suk radius px-2">Pemrograman Web</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <div class="d-inline-block bg-white radius px-2">2 SKS</div>
+                                </div>
+                            </td>
+                            <td>7.5.2</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>07.00 - 08.40</td>
+                            <td>D3 Teknik Informatika 01</td>
+                            <td>
+                                <div>
+                                    <div class="d-inline-block bg-suk radius px-2">Pemrograman Web</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <div class="d-inline-block bg-white radius px-2">2 SKS</div>
+                                </div>
+                            </td>
+                            <td>7.5.2</td>
+                        </tr>
+                        <tr>
+                            <th colspan="3">BESOK</th>
+                            <th>SELASA 02/04/2020</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>07.00 - 08.40</td>
+                            <td>D3 Teknik Informatika 01</td>
+                            <td>
+                                <div>
+                                    <div class="d-inline-block bg-suk radius px-2">Pemrograman Web</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <div class="d-inline-block bg-white radius px-2">2 SKS</div>
+                                </div>
+                            </td>
+                            <td>7.5.2</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>07.00 - 08.40</td>
+                            <td>D3 Teknik Informatika 01</td>
+                            <td>
+                                <div>
+                                    <div class="d-inline-block bg-suk radius px-2">Pemrograman Web</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <div class="d-inline-block bg-white radius px-2">2 SKS</div>
+                                </div>
+                            </td>
+                            <td>7.5.2</td>
+                        </tr>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
